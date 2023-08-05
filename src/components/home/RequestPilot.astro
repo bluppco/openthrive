@@ -1,14 +1,20 @@
 ---
 import Button from "../atom/Button.astro"
+import Title from "../atom/Title.astro";
 ---
 <section class="bg-[url('https://blupp.b-cdn.net/openthrive/bg-dark.svg')] bg-center bg-top bg-black">
-    <div class="max-w-7xl mx-auto container py-20">
-
-    <p class="text-white">Ready To Transform Your B2B Business?</p>
-    <p class="text-white">We transform your B2B marketing strategies into a sales-driven omnichannel engagement.</p>
-    <Button
-        title="Request A Pilot Plan"
-        link="/get-started"
-    />
+    <div class="max-w-7xl mx-auto container py-20\ grid gap-4">
+        <Title
+            text="Ready To Transform Your B2B Business?"
+            dark={ false }
+        />
+        <p class="text-white">Ready To Transform Your B2B Business?</p>
+        <p class="text-white">We transform your B2B marketing strategies into a sales-driven omnichannel engagement.</p>
+        <div class="">
+            <Button
+                title="Request A Pilot Plan"
+                link="/get-started"
+            />
+        </div>
     </div>
 </section>
