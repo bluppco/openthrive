@@ -1,10 +1,21 @@
 ---
 import { FOOTER } from "../../content/footer"
+import FinePrint from "../atom/FinePrint.astro"
 ---
 <footer class="bg-zinc-200">
-    <div class="py-20 max-w-7xl mx-auto container grid grid-cols-5 gap-4">
+    <div class="py-20 max-w-7xl mx-auto container grid grid-cols-5 gap-10">
         <div class="col-span-2">
-            More than 97% of B2B companies use marketing strategies and websites built for B2C. That’s why they don’t see the value and ROI even after doing everything. B2B marketing & website are different, this is what Openthrive solves. Interested?
+            <a href="/">
+                <img
+                    src="https://blupp.b-cdn.net/openthrive/logo-dark.svg"
+                    class="w-40 object-fit"
+                />
+            </a>
+            <div class="py-4">
+                <FinePrint
+                    text="More than 97% of B2B companies use marketing strategies and websites built for B2C. That’s why they don’t see the value and ROI even after doing everything. B2B marketing & website are different, this is what Openthrive solves."
+                />
+            </div>
         </div>
         {
 
@@ -34,5 +45,23 @@ import { FOOTER } from "../../content/footer"
             })
 
         }
+    </div>
+    <div class="flex justify-between max-w-7xl mx-auto container py-4">
+        <FinePrint
+            text="Copyright © All Rights Reserved. 2023"
+        />
+        <div></div>
+        <div class="flex gap-4">
+            <a href="/privacy-policy">
+                <FinePrint
+                    text="Privacy Policy"
+                />
+            </a>
+            <a href="/terms-of-service">
+                <FinePrint
+                    text="Terms of Service"
+                />
+            </a>
+        </div>
     </div>
 </footer>
