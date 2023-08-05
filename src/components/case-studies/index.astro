@@ -1,0 +1,48 @@
+---
+import Heading from "../atom/Heading.astro"
+import SubHeading from "../atom/SubHeading.astro"
+import { CASE_STUDIES } from "../../content/case-studies"
+import ChevronRight from 'astro-heroicons/outline/ChevronRight.astro';
+---
+<section class="bg-[url('https://blupp.b-cdn.net/openthrive/bg-dark.svg')] bg-center bg-top">
+    <div class="py-20 max-w-7xl mx-auto container">
+        <div class="flex flex-col justify-center text-center">
+            <Heading
+                text="Case Studies"
+            />
+            <SubHeading
+                text="Here is how we have transformed B2B websites & marketing into a digital experience that drives people to the sales pipeline."
+            />
+        </div>
+        <div class="pt-10 grid grid-cols-3 gap-4">
+            {
+
+                CASE_STUDIES.map( ( study ) => {
+
+                    return (
+                        <div class="bg-white p-6">
+                            <div class="border border-4 border-zinc-100">
+                                <img
+                                    src={ study.cover }
+                                    class="object-cover"
+                                />
+                            </div>
+                            <div class="grid gap-4 mt-4">
+                                <h4 class="text-xl font-semibold">{ study.company }</h4>
+                                <div class="m">
+                                    <p class="font-light">{ study.description }</p>
+                                </div>
+                                <div class="underline decoration-dashed underline-offset-4 flex items-center gap-2 w-fit">
+                                    <span class="font-semibold">Full Case Study</span>
+                                    <ChevronRight class="w-3" />
+                                </div>
+                            </div>
+                        </div>
+                    )
+
+                })
+
+            }
+        </div>
+    </div>
+</section>
