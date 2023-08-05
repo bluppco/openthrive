@@ -1,0 +1,27 @@
+---
+import Button from "../atom/Button.astro"
+import Title from "../atom/Title.astro";
+---
+<section class="bg-black">
+    <div class="max-w-7xl mx-auto container py-20 grid gap-4 bg-[url('https://blupp.b-cdn.net/openthrive/bg-dark.svg')] bg-left-top">
+        <div class="grid grid-cols-3 gap-4">
+            <div class="col-span-2 gap-8 flex flex-col">
+                <Title
+                    text="Ready To Transform Your B2B Business?"
+                    dark={ false }
+                />
+                <p class="text-white">We convert your old website & B2B marketing strategies into a sales-driven omnichannel engagement.</p>
+                <Button
+                    title="Book A Proposal Meeting"
+                    link="/get-started"
+                />
+            </div>
+            <div class="">
+                <img
+                    src="https://blupp.b-cdn.net/openthrive/Openthrive-Agency-Solutions.png"
+                    class="w-full h-full object-fit"
+                />
+            </div>
+        </div>
+    </div>
+</section>
