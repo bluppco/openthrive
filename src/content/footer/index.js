@@ -7,7 +7,7 @@ export const FOOTER = {
         },{
             text: "B2B Marketing",
         },{
-            text: "eCommerce Solutions"
+            text: "eCommerce"
         }]
     },{
         heading: "Company Info",
