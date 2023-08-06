@@ -5,6 +5,7 @@ import Masthead from "../../components/home/Masthead.astro"
 import Title from "../../components/atom/Title.astro"
 import "../../styles.css"
 import TextOverImage from "../../components/services/TextOverImage.astro"
+import ImageOverText from "../../components/services/ImageOverText.astro"
 ---
 
 <html lang="en">
@@ -25,7 +26,7 @@ import TextOverImage from "../../components/services/TextOverImage.astro"
 				<div class="text-yellow-300 decoration-dashed">Request A Proposal</div>
             </div>
         </div>
-		<!-- SECTION-2 -->
+		<!-- SECTION-2 --><!-- SECTION-3 -->
 		<div class="container max-w-7xl mx-auto">
 		<div class="flex-col text-center space-y-5 py-24 w-1/2 mx-auto">
 			<div>More Than Traffic & Leads</div>
@@ -33,21 +34,17 @@ import TextOverImage from "../../components/services/TextOverImage.astro"
 			<div>Every single website that we design & develop has ONE purpose in mind - Maximize your current marketing & sales results, thus skyrocketing revenue.</div>
 			<button class="bg-yellow-300 py-3 px-6 hover:text-white hover:bg-green-800">Request A Proposal ></button>
 		</div>
-		</div>
-		<!-- SECTION-3 -->
-		<div class="container max-w-7xl mx-auto">
 		<div class="flex space-x-20">
 			<TextOverImage
 				brand_name="Crush Level Beauty"
 				text="Fresh & Modern Design"
 				description="We aim to create fabulous experiences for your prospects when they land on your website for the first time, and even after becoming your customers."
 			/>
-			<div class="flex-col space-y-2 mt-20">
-				<div class="bg-red-500 w-full h-96"></div>
-				<div class="font-medium">Blazing Fast Website</div>
-				<div class="font-bold text-2xl">App-Like Experience</div>
-				<div class="font-light">Brain picks up patterns. We design super light websites that feel like a personalized space for your buyers, just like when they use apps on smartphones.</div>
-			</div>
+			<ImageOverText
+				brand_name="Blazing Fast Website"
+				text="App-Like Experience"
+				description="Brain picks up patterns. We design super light websites that feel like a personalized space for your buyers, just like when they use apps on smartphones."
+			/>
 		</div>
 
 		<div class="flex gap-20 py-16">
@@ -56,13 +53,12 @@ import TextOverImage from "../../components/services/TextOverImage.astro"
 				text="Redesign To Reimagine"
 				description="You deserve authenticity. Like your business, your website needs to be unique. We present your business in an exceptional way, second to none."
 			/>
-			
-				<div class="flex-col space-y-2 mt-20">
-					<div class="bg-red-500 w-full h-96"></div>
-					<div class="font-medium">Impossible To Crack Security</div>
-					<div class="font-bold text-2xl">Static Edge Distribution</div>
-					<div class="font-light">Keeping the digital front of your business safe and secure starts right from your website. We make sure no one can break into your safe space.</div>
-			</div>
+			<ImageOverText
+				brand_name="Impossible To Crack Security"
+				text="Static Edge Distribution"
+				description="Keeping the digital front of your business safe and secure starts right from your website. We make sure no one can break into your safe space."
+			/>
+		</div>
 		</div>
 		</div>
 		<!-- SECTION-4 -->
