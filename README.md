@@ -6,4 +6,4 @@
 - Server - Cloudflare
 
 ### Home Page
-- 88 Network requests, traferrring 5.53MB of data.
+- 88 Network requests, transferring 5.53MB of data.
