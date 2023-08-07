@@ -1,5 +1,6 @@
 ---
 import Button from "../atom/Button.astro"
+import H1 from "../atom/H1.astro"
 ---
 <section class="bg-[url('https://blupp.b-cdn.net/openthrive/bg-dark.svg')] bg-center bg-top bg-black">
     <div class="max-w-7xl mx-auto container py-4">
@@ -33,7 +34,9 @@ import Button from "../atom/Button.astro"
         <div class="py-16 grid grid-cols-4">
             <div class="col-span-3 grid gap-8">
                 <div class="text-zinc-50">100% B2B Marketing Agency</div>
-                <div class="text-zinc-50 text-5xl font-bold font-['LeifaBold']">If Revenue Growth Is Your<br/> Challenge, We Accept That</div>
+                <H1
+                    text={"If Revenue Growth Is Your " + "Challenge, We Accept That"}
+                />
                 <div class="text-zinc-50 text-2xl">Openthrive is a marketing partner for B2B companies to drive sales & revenue growth at scale. B2B Marketing strategy with 100% implementation. In B2B, this email, that post, and such targeting never work. That's what we fix.</div>
                 <Button
                     title="Learn More How"

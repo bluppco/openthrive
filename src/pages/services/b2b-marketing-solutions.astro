@@ -1,13 +1,16 @@
 ---
 import Footer from "../../components/common/Footer.astro"
 import Header from "../../components/common/Header.astro"
-import Title5xl from "../../components/atom/Title5xl.astro"
+// import Title5xl from "../../components/atom/Title5xl.astro"
 import Button from "../../components/atom/Button.astro"
 import Title from "../../components/atom/Title.astro"
 import TextOverImage from "../../components/services/TextOverImage.astro"
 import ImageOverText from "../../components/services/ImageOverText.astro"
 import Text2xl from "../../components/atom/Text2xl.astro"
+import H1 from "../../components/atom/H1.astro"
 import Head from "../../components/common/Head.astro"
+import RequestPilot from "../../components/home/RequestPilot.astro"
+import "../../styles.css"
 ---
 
 <html lang="en">
@@ -17,9 +20,9 @@ import Head from "../../components/common/Head.astro"
 		<!-- SECTION-1 -->
 		<div class="flex-col py-24 bg-[url('https://blupp.b-cdn.net/openthrive/bg-dark.svg')] bg-top">
             <div class="flex-col space-y-6 mx-20 w-1/2">
-				<Title5xl
-				text="B2B Marketing Solutions To Drive Sales At Scale"
-				/>
+				<H1
+                    text={"If Revenue Growth Is Your" + "Challenge, We Accept That"}
+                />
                 <div class="text-zinc-50 text-2xl">In B2B, the sales process is very long. But a powerful B2B marketing turns all these crazy long back-and-forth sales meetings into one simple conversation, “what's the next step, send us the invoice”.</div>
 				<div>
 					<Button
@@ -43,7 +46,7 @@ import Head from "../../components/common/Head.astro"
 					/>
 				</div>
 			</div>
-			<div class="flex gap-20">
+			<div class="grid grid-cols-2 gap-20">
 				<TextOverImage
 					brand_name="Strategy"
 					text="Realtime GTM Engine"
@@ -55,7 +58,7 @@ import Head from "../../components/common/Head.astro"
 					description="Brain picks up patterns. We design super light websites that feel like a personalized space for your buyers, just like when they use apps on smartphones."
 				/>
 			</div>
-			<div class="flex gap-20 py-16">
+			<div class="grid grid-cols-2 gap-20">
 				<TextOverImage
 					brand_name="Execution"
 					text="Marketing Team Force"
@@ -87,6 +90,14 @@ import Head from "../../components/common/Head.astro"
 					</div>
 				</div>
 			</div>
+			<RequestPilot
+				title="Ready To Transform Your B2B Business?"
+				description="We transform your B2B marketing strategies into a sales-driven omnichannel engagement."
+				button_title="Request A Pilot Plan"
+				button_link=""
+				image="https://blupp.b-cdn.net/openthrive/Openthrive-Agency-Solutions-Vertika-Nigam-min-1.png?quality=75"
+				dark=""
+			/>
 			<div class="grid grid-cols-3">
 				<div>
 					<div class="bg-red-600 h-16 w-16"></div>
