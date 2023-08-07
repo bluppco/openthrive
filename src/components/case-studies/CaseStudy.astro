@@ -1,0 +1,20 @@
+---
+const { cover, company, description, link } = Astro.props
+import ChevronRight from "astro-heroicons/outline/ChevronRight.astro"
+---
+<div class="bg-white p-6">
+    <div class="border border-4 border-zinc-100 w-full h-48 overflow-hidden">
+        <img
+            src={ cover }
+            class="object-fit z-10"
+        />
+    </div>
+    <div class="grid gap-4 mt-4">
+        <h4 class="text-xl font-semibold">{ company }</h4>
+        <p class="font-light">{ description }</p>
+        <div class="underline decoration-dashed underline-offset-4 flex items-center gap-2 w-fit">
+            <span class="font-semibold text-sm">Full Case Study</span>
+            <ChevronRight class="w-3" />
+        </div>
+    </div>
+</div>
