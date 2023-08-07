@@ -4,6 +4,7 @@ import SubHeading from "../atom/SubHeading.astro"
 import { CASE_STUDIES } from "../../content/case-studies"
 import ChevronRight from "astro-heroicons/outline/ChevronRight.astro"
 import BookPropsal from "./BookPropsal.astro"
+import CaseStudy from "./CaseStudy.astro"
 ---
 <section class="bg-[url('https://blupp.b-cdn.net/openthrive/bg-dark.svg')] bg-top bg-center bg-black">
     <div class="py-20 max-w-7xl mx-auto container">
@@ -21,22 +22,11 @@ import BookPropsal from "./BookPropsal.astro"
                 CASE_STUDIES.map( ( study ) => {
 
                     return (
-                        <div class="bg-white p-6">
-                            <div class="border border-4 border-zinc-100 w-full h-48 overflow-hidden">
-                                <img
-                                    src={ study.cover }
-                                    class="object-fit z-10"
-                                />
-                            </div>
-                            <div class="grid gap-4 mt-4">
-                                <h4 class="text-xl font-semibold">{ study.company }</h4>
-                                <p class="font-light">{ study.description }</p>
-                                <div class="underline decoration-dashed underline-offset-4 flex items-center gap-2 w-fit">
-                                    <span class="font-semibold">Full Case Study</span>
-                                    <ChevronRight class="w-3" />
-                                </div>
-                            </div>
-                        </div>
+                        <CaseStudy
+                            cover={ study.cover }
+                            company={ study.company }
+                            description={ study.description }
+                        />
                     )
 
                 })
