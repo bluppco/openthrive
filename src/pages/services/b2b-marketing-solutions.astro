@@ -1,6 +1,12 @@
 ---
 import Footer from "../../components/common/Footer.astro"
 import Header from "../../components/common/Header.astro"
+import Title5xl from "../../components/atom/Title5xl.astro"
+import Button from "../../components/atom/Button.astro"
+import Title from "../../components/atom/Title.astro"
+import TextOverImage from "../../components/services/TextOverImage.astro"
+import ImageOverText from "../../components/services/ImageOverText.astro"
+import Text2xl from "../../components/atom/Text2xl.astro"
 import Head from "../../components/common/Head.astro"
 ---
 
@@ -8,6 +14,85 @@ import Head from "../../components/common/Head.astro"
 	<Head />
 	<body>
 		<Header />
+		<!-- SECTION-1 -->
+		<div class="flex-col py-24 bg-[url('https://blupp.b-cdn.net/openthrive/bg-dark.svg')] bg-top">
+            <div class="flex-col space-y-6 mx-20 w-1/2">
+				<Title5xl
+				text="B2B Marketing Solutions To Drive Sales At Scale"
+				/>
+                <div class="text-zinc-50 text-2xl">In B2B, the sales process is very long. But a powerful B2B marketing turns all these crazy long back-and-forth sales meetings into one simple conversation, “what's the next step, send us the invoice”.</div>
+				<div>
+					<Button
+						title="Request A Proposal"
+					/>
+				</div>
+            </div>
+        </div>
+		<!-- SECTION-2 -->
+		<div class="container max-w-7xl mx-auto">
+			<div class="flex-col text-center space-y-5 py-24 w-3/5 mx-auto">
+				<div>What We Deliver</div>
+				<Title
+					text="The Most Effective B2B Marketing Service"
+					dark="true"
+				/>
+				<div class="text-2xl font-light">We are a 100% B2B marketing agency that understands B2B marketing is beyond spray & pray. We start with a strategy to build decision-making trust, rather than convincing anyone to buy something.</div>
+				<div class="flex justify-center">
+					<Button
+						title="Request A Proposal"
+					/>
+				</div>
+			</div>
+			<div class="flex gap-20">
+				<TextOverImage
+					brand_name="Strategy"
+					text="Realtime GTM Engine"
+					description="In B2B the way people make buying decisions changes very fast, each month & every quarter could look different. We build & keep your GTM dynamic to hold your marketing relevant & working."
+				/>
+				<ImageOverText
+					brand_name="Blazing Fast Website"
+					text="App-Like Experience"
+					description="Brain picks up patterns. We design super light websites that feel like a personalized space for your buyers, just like when they use apps on smartphones."
+				/>
+			</div>
+			<div class="flex gap-20 py-16">
+				<TextOverImage
+					brand_name="Execution"
+					text="Marketing Team Force"
+					description="Get a full-fledged B2B marketing team that joins your force from Day 1. Implementing the strategies 100% - trust, accountability, and expertise are what we bring to the table. Moreover, the goal is a marketing team for your business growth."
+				/>
+				<ImageOverText
+					brand_name="Insights"
+					text="Take Data Based Decisions"
+					description="Every action leads to a conclusion. We bring actionable insights at the end of every B2B marketing campaign. A Level of detail to help your management team to make decisions backed by data, not some random report."
+				/>
+			</div>
+			<div>
+				<div class="w-3/5 space-y-6 flex-col py-2">
+					<div class="">Beyond B2B Marketing</div>
+					<Title
+						text="B2B Marketing Strategy With Implementation"
+						dark="true"
+					/>
+					<div class="py-4">
+						<Text2xl
+							text="As a B2B Marketing Agency, we specialize in digital marketing and inbound lead generation solutions. We don't stop there - You get a unique combination of the following scopes."
+							dark="true"
+						/>
+					</div>
+					<div>
+						<Button
+							title="Request A Proposal"
+						/>
+					</div>
+				</div>
+			</div>
+			<div class="grid grid-cols-3">
+				<div>
+					<div class="bg-red-600 h-16 w-16"></div>
+				</div>
+			</div>
+		<div>
 		<Footer/>
 	</body>
 </html>
