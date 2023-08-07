@@ -1,0 +1,27 @@
+---
+const { dark, title, question1,question2, question3, question4} = Astro.props
+---
+<div class="py-24">
+    <p class="text-center mb-4">Popularly Asked</p>
+    <div class="text-center mb-8">
+    <h2 class={`${ dark ? "text-black": "text-white"} text-4xl font-bold font-['LeifaBold']`}>FAQs For B2B Marketing Agency</h2>
+    </div>
+    <div class="flex-col space-y-6">
+        <div class="flex justify-between w-1/2 mx-auto">
+            <div class="font-bold">{ question1 }</div>
+            <div class="font-bold">+</div>
+        </div>
+        <div class="flex justify-between w-1/2 mx-auto">
+            <div class="font-bold">{ question2 }</div>
+            <div class="font-bold">+</div>
+        </div>
+        <div class="flex justify-between w-1/2 mx-auto">
+            <div class="font-bold">{ question3 }</div>
+            <div class="font-bold">+</div>
+        </div>
+        <div class="flex justify-between w-1/2 mx-auto">
+            <div class="font-bold">{ question4 }</div>
+            <div class="font-bold">+</div>
+        </div>
+    </div>
+</div>
