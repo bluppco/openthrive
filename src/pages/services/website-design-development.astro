@@ -14,16 +14,11 @@ import Title1Para1 from "../../components/services/Title1Para1.astro"
 import CaseStudy from "../../components/services/CaseStudy.astro"
 import RequestPilot from "../../components/home/RequestPilot.astro"
 import FAQs from "../../components/services/FAQs.astro"
+import Head from "../../components/common/Head.astro"
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
+	<Head />
 	<body>
 		<Header/>
 		<div class="flex-col py-24 bg-[url('https://blupp.b-cdn.net/openthrive/bg-dark.svg')] bg-top">
@@ -174,10 +169,10 @@ import FAQs from "../../components/services/FAQs.astro"
 			</div>
 		</div>
 		<!-- SECTION-7 -->
-		<RequestPilot 
+		<RequestPilot
 			title="Ready To Transform Your Website For Marketing & Sales?"
 			description="Redesign your website to maximize the results and ROI from marketing & sales. Get more traffic & leads without running hight budget ads."
-			button_title="Request A Proposal"	 
+			button_title="Request A Proposal"
 			button_link=""
 			image="https://blupp.b-cdn.net/openthrive/Openthrive-Agency-Solutions-Vertika-Nigam-min-1.png?quality=75"
 			dark=""
