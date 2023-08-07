@@ -2,36 +2,27 @@
 import Button from "../atom/Button.astro"
 import Title from "../atom/Title.astro";
 const { title, image, description, button_title, button_link ,dark } = Astro.props
-import ChevronRight from 'astro-heroicons/outline/ChevronRight.astro';
 ---
 <section class="bg-black bg-[url('https://blupp.b-cdn.net/openthrive/bg-dark.svg')] bg-top">
     <div class="max-w-7xl mx-auto container py-20 grid gap-4">
         <div class="grid grid-cols-3 gap-4">
             <div class="col-span-2 gap-8 flex flex-col">
-                <h2 class={`${ dark ? "text-black": "text-white"} text-4xl font-bold font-['LeifaBold']`}>{ title }</h2>
-                <!-- <Title
-                    text="Ready To Transform Your B2B Business?"
+                <Title
+                    text={ title }
                     dark={ false }
-                /> -->
+                />
                 <p class="text-white text-2xl">{ description }</p>
-                <!-- <Button
-                    title="Request A Pilot Plan"
-                    link="/get-started"
-                /> -->
-                <a href={ button_link }>
-                    <button class="bg-yellow-400 px-6 py-3 text-black text-sm hover:bg-green-700 hover:text-white transition duration-500 flex gap-2">
-                        <span>{ button_title }</span>
-                        <ChevronRight class="w-3" />
-                    </button>
-                </a>
+                <Button
+                    title={ button_title }
+                    link={ button_link }
+                />
             </div>
-            <img src={ image } alt=""class="w-full h-full object-fit">
-            <!-- <div class="">
+            <div class="">
                 <img
                     src="https://blupp.b-cdn.net/openthrive/Openthrive-Agency-Solutions-Vertika-Nigam-min-1.png?quality=75"
                     class="w-full h-full object-fit"
                 />
-            </div> -->
+            </div>
         </div>
     </div>
 </section>
