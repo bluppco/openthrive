@@ -4,6 +4,16 @@ import Header from "../../components/common/Header.astro"
 import Masthead from "../../components/home/Masthead.astro"
 import Title from "../../components/atom/Title.astro"
 import "../../styles.css"
+import TextOverImage from "../../components/services/TextOverImage.astro"
+import ImageOverText from "../../components/services/ImageOverText.astro"
+import Button from "../../components/atom/Button.astro"
+import ImageOverTextS from "../../components/services/ImageOverTextS.astro"
+import FinePrint from "../../components/atom/FinePrint.astro"
+import Text3xl from "../../components/atom/Text3xl.astro"
+import Title1Para1 from "../../components/services/Title1Para1.astro"
+import CaseStudy from "../../components/services/CaseStudy.astro"
+import RequestPilot from "../../components/home/RequestPilot.astro"
+import FAQs from "../../components/services/FAQs.astro"
 ---
 
 <html lang="en">
@@ -16,167 +26,170 @@ import "../../styles.css"
 	</head>
 	<body>
 		<Header/>
-		<div class="flex-col py-24 bg-black">
+		<div class="flex-col py-24 bg-[url('https://blupp.b-cdn.net/openthrive/bg-dark.svg')] bg-top">
 			<!-- SECTION-1 -->
-            <div class="flex-col space-y-6 mx-28 w-1/2">
+            <div class="flex-col space-y-6 mx-20 w-1/2">
                 <div class="text-zinc-50 text-5xl font-bold">Custom Website Design & Development Service</div>
                 <div class="text-zinc-50 text-2xl">We transform your website into a digital experience that drives people to the sales pipeline. Custom Website design & developed service by a team of marketers, designers & developers.</div>
 				<div class="text-yellow-300 decoration-dashed">Request A Proposal</div>
             </div>
         </div>
 		<!-- SECTION-2 -->
-		<div class="container max-w-6xl mx-auto">
-		<div class="flex-col text-center space-y-5 py-24 w-1/2 mx-auto">
-			<div>More Than Traffic & Leads</div>
-			<div class="text-3xl font-bold">Website For Omnichannel Engagement To Drive Marketing & Sales At Scale</div>
-			<div>Every single website that we design & develop has ONE purpose in mind - Maximize your current marketing & sales results, thus skyrocketing revenue.</div>
-			<button class="bg-yellow-300 py-3 px-6 hover:text-white hover:bg-green-800">Request A Proposal ></button>
-		</div>
+		<div class="container max-w-7xl mx-auto">
+			<div class="flex-col text-center space-y-5 py-24 w-1/2 mx-auto">
+				<div>More Than Traffic & Leads</div>
+				<div class="text-3xl font-bold">Website For Omnichannel Engagement To Drive Marketing & Sales At Scale</div>
+				<div>Every single website that we design & develop has ONE purpose in mind - Maximize your current marketing & sales results, thus skyrocketing revenue.</div>
+				<div class="flex justify-center">
+					<Button
+						title="Request A Proposal"
+					/>
+				</div>
+			</div>
+			<div class="flex space-x-20">
+				<TextOverImage
+					brand_name="Crush Level Beauty"
+					text="Fresh & Modern Design"
+					description="We aim to create fabulous experiences for your prospects when they land on your website for the first time, and even after becoming your customers."
+				/>
+				<div class="">
+				<ImageOverText
+					brand_name="Blazing Fast Website"
+					text="App-Like Experience"
+					description="Brain picks up patterns. We design super light websites that feel like a personalized space for your buyers, just like when they use apps on smartphones."
+				/>
+				</div>
+			</div>
+			<div class="flex gap-20 py-16">
+				<TextOverImage
+					brand_name="From Ground Zero"
+					text="Redesign To Reimagine"
+					description="You deserve authenticity. Like your business, your website needs to be unique. We present your business in an exceptional way, second to none."
+				/>
+				<ImageOverText
+					brand_name="Impossible To Crack Security"
+					text="Static Edge Distribution"
+					description="Keeping the digital front of your business safe and secure starts right from your website. We make sure no one can break into your safe space."
+				/>
+			</div>
+			<div class="grid grid-cols-3 gap-10 py-24">
+				<ImageOverTextS
+					title="Static Edge Distribution"
+					description="Keeping the digital front of your business safe and secure starts right from your website. We make sure no one can break into your safe space."
+				/>
+				<ImageOverTextS
+					title="SEO By Nature"
+					description="Getting the search engines to respond is not an external job. We design websites that are inherently SEO-friendly, attracting the right kind of humans to your solutions."
+				/>
+				<ImageOverTextS
+					title="Scale To Any Limit"
+					description="Our website development process is defined by its scalability. Your website is never a one-time thing. We bring you an easy-to-expand system, that helps you evolve your website forever."
+				/>
+			</div>
 		</div>
 		<!-- SECTION-3 -->
-		<div class="container max-w-6xl mx-auto">
-		<div class="flex space-x-20">
-			<div class="flex-col space-y-2">
-				<div class="font-medium">Crush Level Beauty</div>
-				<div class="font-bold text-2xl">Fresh & Modern Design</div>
-				<div class="font-light">We aim to create fabulous experiences for your prospects when they land on your website for the first time, and even after becoming your customers.</div>
-				<div class="bg-red-500 w-full h-96"></div>
+		<div class="bg-black text-white pb-24">
+			<div class="container max-w-7xl mx-auto">
+				<div class="flex-col text-center space-y-5 pt-24 pb-8 w-1/2 mx-auto">
+					<div>Technology And Stacks</div>
+					<div class="text-3xl font-bold">Present & Future Proof Website</div>
+					<div>Transform old website tech with latest and future proof stacks to get more ROI on every penny you spend on marketing & sales.</div>
+					<div class="text-yellow-300 decoration-dashed">Request A Proposal</div>
+				</div>
+				<div class="flex space-x-20">
+					<TextOverImage
+						brand_name="Small & Medium Website"
+						text="WordPress Or Hubspot CMS"
+						description="If your website is under 25 unique pages, we use custom WordPress design & development. Modern and sales-ready fast and secure website to support omnichannel engagement."
+					/>
+					<ImageOverText
+						brand_name="Enterprise Website"
+						text="Headless Experience"
+						description="if your website has or would have 25+ unique pages and dynamic content to serve at scale, we pick Headless CMS & serverless system to build a fortune grade website. This is the present & also the future."
+					/>
+				</div>
 			</div>
-			<div class="flex-col space-y-2 mt-20">
-				<div class="bg-red-500 w-full h-96"></div>
-				<div class="font-medium">Blazing Fast Website</div>
-				<div class="font-bold text-2xl">App-Like Experience</div>
-				<div class="font-light">Brain picks up patterns. We design super light websites that feel like a personalized space for your buyers, just like when they use apps on smartphones.</div>
-			</div>
-		</div>
-
-		<div class="flex gap-20 py-16">
-			<div class="flex-col space-y-2">
-				<div class="font-medium">From Ground Zero</div>
-				<div class="font-bold text-2xl">Redesign To Reimagine</div>
-				<div class="font-light">You deserve authenticity. Like your business, your website needs to be unique. We present your business in an exceptional way, second to none.</div>
-				<div class="bg-red-500 w-full h-96"></div>
-			</div>
-				<div class="flex-col space-y-2 mt-20">
-					<div class="bg-red-500 w-full h-96"></div>
-					<div class="font-medium">Impossible To Crack Security</div>
-					<div class="font-bold text-2xl">Static Edge Distribution</div>
-					<div class="font-light">Keeping the digital front of your business safe and secure starts right from your website. We make sure no one can break into your safe space.</div>
-			</div>
-		</div>
 		</div>
 		<!-- SECTION-4 -->
-		<div class="container max-w-6xl mx-auto">
-		<div class="grid grid-cols-3 gap-10 py-24">
-			<div class="flex-col space-y-2">
-				<div class="bg-red-500 h-64"></div>
-				<div class="text-xl font-semibold">Built For Engagement</div>
-				<div class="font-light">The days of brochure-in-the-browser are long gone. Your website is one place where your prospects land expecting to explore, engage, and make good decisions. So, give them that.</div>
-			</div>
-			<div class="flex-col space-y-2">
-				<div class="bg-red-500 h-64"></div>
-				<div class="text-xl font-semibold">SEO By Nature</div>
-				<div class="font-light">Getting the search engines to respond is not an external job. We design websites that are inherently SEO-friendly, attracting the right kind of humans to your solutions.</div>
-			</div>
-			<div class="flex-col space-y-2">
-				<div class="bg-red-500 h-64"></div>
-				<div class="text-xl font-semibold">Scale To Any Limit</div>
-				<div class="font-light">Our website development process is defined by its scalability. Your website is never a one-time thing. We bring you an easy-to-expand system, that helps you evolve your website forever.</div>
-			</div>
-		</div>
-		</div>
-		<!-- SECTION-5 -->
-		<!-- SECTION-2(used) -->
-		<div class="bg-black text-white pb-24">
-		<div class="container max-w-6xl mx-auto">
-			<div class="flex-col text-center space-y-5 py-24 w-1/2 mx-auto">
-				<div>Technology And Stacks</div>
-				<div class="text-3xl font-bold">Present & Future Proof Website</div>
-				<div>Transform old website tech with latest and future proof stacks to get more ROI on every penny you spend on marketing & sales.</div>
-				<div class="text-yellow-300 decoration-dashed">Request A Proposal</div>
-			</div>
-			</div>
-			<!-- SECTION-3(used) -->
-			<div class="container max-w-6xl mx-auto">
-			<div class="flex space-x-20">
-				<div class="flex-col space-y-2">
-					<div class="font-medium">Small & Medium Website</div>
-					<div class="font-bold text-2xl">WordPress Or Hubspot CMS</div>
-					<div class="font-light">If your website is under 25 unique pages, we use custom WordPress design & development. Modern and sales-ready fast and secure website to support omnichannel engagement.</div>
-					<div class="bg-red-500 w-full h-96"></div>
-				</div>
-				<div class="flex-col space-y-2 mt-20">
-					<div class="bg-red-500 w-full h-96"></div>
-					<div class="font-medium">Enterprise Website</div>
-					<div class="font-bold text-2xl">Headless Experience</div>
-					<div class="font-light">if your website has or would have 25+ unique pages and dynamic content to serve at scale, we pick Headless CMS & serverless system to build a fortune grade website. This is the present & also the future.</div>
-				</div>
-			</div>
-			</div>
-			</div>
-		</div>
-		</div>
-		<!-- SECTION-6 some part of sec-2 used -->
-		<div class="container max-w-6xl mx-auto">
+		<div class="container max-w-7xl mx-auto">
 			<div class="flex-col space-y-5 py-24 w-3/5">
 				<div>Results Oriented</div>
-				<div class="text-3xl font-bold">Transform Website Design To Maximize Marketing ROI</div>
+				<Title
+					text="Transform Website Design To Maximize Marketing ROI"
+					dark="true"
+				/>
 				<div class="text-2xl font-extralight">Bad website design not only pushes your business back. But also let your competitors win deals that you should have. It is making your sales pipeline journey a trip that never ends.</div>
-				<button class="bg-yellow-300 py-3 px-6 hover:text-white hover:bg-green-800">Request A Proposal ></button>
+				<div>
+					<Button
+						title="Request A Proposal"
+					/>
+				</div>
 			</div>
-			</div>
-		<!-- SECTION-7 -->
-		<div class="container max-w-6xl mx-auto">
+		</div>
+		<!-- SECTION-5 -->
+		<div class="container max-w-7xl mx-auto">
 		<div class="flex mb-24 gap-8">
 			<div class="w-5/12">
-				<div>
-					<div class="text-xl">Upgrade for real-time GTM Engine</div>
-					<div class="font-light py-4">You want to expand your company's business, but your current systems are not capable of handling the speed. We help you get out of this mess and go to market without any technical limitations.</div>
-				</div>
-				<div>
-					<div class="text-xl">Multichannel to Omni-Presence</div>
-					<div class="font-light py-4">Handling multiple disintegrated tools for your marketing and sales, not only results in low efficiency but also loss of data while trying to maintain communication with prospects. We build your website on Headless CMS so that your engagement system becomes omnichannel, increasing your ability to reach a bigger audience and keep all your data safe and secure for smoother communication.</div>
-				</div>
-				<div>
-					<div class="text-xl">Drive Marketing and Sales</div>
-					<div class="font-light py-4">Your website is not supposed to be a brochure-in-the-browser. It has to enable marketing so that your marketing can support your sales. And that directly impacts your sales pipeline and sales closing time.</div>
-				</div>
+				<Title1Para1
+					title="Upgrade for real-time GTM Engine"
+					description="You want to expand your company's business, but your current systems are not capable of handling the speed. We help you get out of this mess and go to market without any technical limitations."
+				/>
+				<Title1Para1
+					title="Multichannel to Omni-Presence"
+					description="Handling multiple disintegrated tools for your marketing and sales, not only results in low efficiency but also loss of data while trying to maintain communication with prospects. We build your website on Headless CMS so that your engagement system becomes omnichannel, increasing your ability to reach a bigger audience and keep all your data safe and secure for smoother communication."
+				/>
+				<Title1Para1
+					title="Drive Marketing and Sales"
+					description="Your website is not supposed to be a brochure-in-the-browser. It has to enable marketing so that your marketing can support your sales. And that directly impacts your sales pipeline and sales closing time."
+				/>
 			</div>
 			<div class="bg-red-500 h-[55vh] w-7/12"></div>
 		</div>
 		</div>
-		<!-- SECTION-8 some elements of section-4-->
+		<!-- SECTION-6 -->
 		<div class="bg-zinc-100">
-		<div class="container max-w-6xl mx-auto py-24">
-		<div class="text-center pb-4">Case Studies</div>
-		<Title
-			text="See Our Work & Delivery."
-			dark={ true }
+			<div class="container max-w-7xl mx-auto py-24">
+				<div class="text-center pb-4">Case Studies</div>
+				<div class="text-center">
+					<Title
+						text="See Our Work & Delivery."
+						dark={ true }
+					/>
+				</div>
+				<div class="grid grid-cols-3 gap-10 py-12">
+					<CaseStudy
+						brand_name="Vecmocon Technologies"
+						description="Vecmocon had some really smart products around EV battery technology, but their website was unable to convey the right message"
+					/>
+					<CaseStudy
+						brand_name="Prad Automotive"
+						description="Transformation of an outdated website into two separate functions - Complete B2B marketing project with B2C retail integration"
+					/>
+					<CaseStudy
+						brand_name="Repair Pricer"
+						description="This Real Estate SaaS company had the coolest product in the industry but saw a slow growth rate. A combination"
+					/>
+				</div>
+				<div class="bg-red-500 h-28 w-2/3 mx-auto my-6"></div>
+			</div>
+		</div>
+		<!-- SECTION-7 -->
+		<RequestPilot 
+			title="Ready To Transform Your Website For Marketing & Sales?"
+			description="Redesign your website to maximize the results and ROI from marketing & sales. Get more traffic & leads without running hight budget ads."
+			button_title="Request A Proposal"	 
+			button_link=""
+			image="https://blupp.b-cdn.net/openthrive/Openthrive-Agency-Solutions-Vertika-Nigam-min-1.png?quality=75"
+			dark=""
 		/>
-			<div class="grid grid-cols-3 gap-10 py-12">
-				<div class="flex-col space-y-5 bg-white border-x border-y border-blue-100 p-4">
-					<div class="bg-red-500 h-48 w-80"></div>
-					<div class="text-xl font-semibold">Vecmocon Technologies</div>
-					<div class="font-light">Vecmocon had some really smart products around EV battery technology, but their website was unable to convey the right message</div>
-					<div class="text-sm font-medium">Full Case Study ></div>
-				</div>
-				<div class="flex-col space-y-5 bg-white border-x border-y border-blue-100 p-4">
-					<div class="bg-red-500 h-48 w-80"></div>
-					<div class="text-xl font-semibold">Prad Automotive</div>
-					<div class="font-light">Transformation of an outdated website into two separate functions - Complete B2B marketing project with B2C retail integration</div>
-					<div class="text-sm font-medium">Full Case Study ></div>
-				</div>
-				<div class="flex-col space-y-5 bg-white border-x border-y border-blue-100 p-4">
-					<div class="bg-red-500 h-48 w-80"></div>
-					<div class="text-xl font-semibold">Repair Pricer</div>
-					<div class="font-light">This Real Estate SaaS company had the coolest product in the industry but saw a slow growth rate. A combination</div>
-					<div class="text-sm font-medium">Full Case Study ></div>
-				</div>
-			</div>
-			<div class="bg-red-500 h-28 w-2/3 mx-auto my-6"></div>
-			</div>
-		</div>
-		</div>
+		<!-- SECTION-8 -->
+		<FAQs
+			dark="true"
+			question1="What services does this website design agency provide?"
+			question2="How much does our website development services cost?"
+			question3="What is the difference between B2C and B2B websites?"
+			question4="Why a business should redesign their website?"
+		/>
 		<Footer/>
 	</body>
 </html>
