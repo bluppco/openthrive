@@ -1,0 +1,4 @@
+---
+const { text, dark } = Astro.props
+---
+<p class={`${ dark ? "text-black": "text-white"} text-2xl font-light`}>{ text }</p>
