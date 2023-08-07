@@ -13,6 +13,7 @@ import Text3xl from "../../components/atom/Text3xl.astro"
 import Title1Para1 from "../../components/services/Title1Para1.astro"
 import CaseStudy from "../../components/services/CaseStudy.astro"
 import RequestPilot from "../../components/home/RequestPilot.astro"
+import FAQs from "../../components/services/FAQs.astro"
 ---
 
 <html lang="en">
@@ -25,7 +26,7 @@ import RequestPilot from "../../components/home/RequestPilot.astro"
 	</head>
 	<body>
 		<Header/>
-		<div class="flex-col py-24 bg-black">
+		<div class="flex-col py-24 bg-[url('https://blupp.b-cdn.net/openthrive/bg-dark.svg')] bg-top">
 			<!-- SECTION-1 -->
             <div class="flex-col space-y-6 mx-20 w-1/2">
                 <div class="text-zinc-50 text-5xl font-bold">Custom Website Design & Development Service</div>
@@ -180,6 +181,14 @@ import RequestPilot from "../../components/home/RequestPilot.astro"
 			button_link=""
 			image="https://blupp.b-cdn.net/openthrive/Openthrive-Agency-Solutions-Vertika-Nigam-min-1.png?quality=75"
 			dark=""
+		/>
+		<!-- SECTION-8 -->
+		<FAQs
+			dark="true"
+			question1="What services does this website design agency provide?"
+			question2="How much does our website development services cost?"
+			question3="What is the difference between B2C and B2B websites?"
+			question4="Why a business should redesign their website?"
 		/>
 		<Footer/>
 	</body>
